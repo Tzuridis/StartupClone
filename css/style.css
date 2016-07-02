@@ -1,12 +1,14 @@
 
 
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
 .content {
     padding: 0 0.970rem;
     margin: 0 auto;
     min-width: 37.5rem;
-}
-:focus {
-    outline: none;
 }
 
 
@@ -16,6 +18,7 @@
     width: 100%;
     border-bottom: 1px solid #DDD;
     z-index: 9999;
+    box-sizing: border-box;
 }
 .top-navigation > .content {
     height: 4.375rem;
@@ -131,4 +134,46 @@ button:hover {
     font-size: 1.313rem;
 }
 
- 
+
+
+.social {
+    background-color: #fff;
+    overflow: auto;
+    padding-bottom: 9.375rem;
+    text-align: center;
+}
+.social .icons > li {
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border: 5px solid #eaebec;
+    padding: 0.625rem 0;
+    text-align: center;
+}
+.social .icons > li:hover {
+    cursor: pointer;
+}
+.social .twitter {
+    color: #55acee;
+}
+.social .facebook {
+    color: #4c66a4;
+}
+.social .instagram {
+    color: #3f729b;
+}
+.social h5 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    margin-left: 2.0rem;
+}
+
+.social .caption {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #838994;
+}
