@@ -20,6 +20,9 @@ div {
     padding: 0 0.970rem;
     margin: 0 auto;
     min-width: 37.5rem;
+    max-width: 660px; 
+    margin: 0 auto;
+
 }
 :focus {
     outline: none;
@@ -38,19 +41,21 @@ div {
 }
 .top-navigation .logo {
     height: 4.375rem;
+     text-align: center;
 }
 .top-navigation .links {
     float: right;
+    font-family: 'Roboto', sans-serif;
     color: #838994;
     font-size: 16px;
     margin-top: 25px;
+    -webkit-font-smoothing: antialiased;
 }
 .top-navigation .links li {
     display: inline-block;
     margin-left: 25px;
-
 }
-.top-navigation .links li.active {
+.top-navigation .links .active {
     color: #4c5058;
     font-weight: 500;
 }
@@ -135,6 +140,7 @@ button:hover {
     font-weight: 300;
 }
 .cases .devices > li {
+     font-size: 0;
     width: 33.3333333%;
     float:left;
 }
