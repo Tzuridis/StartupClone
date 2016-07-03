@@ -1,14 +1,27 @@
-
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
+    background-color: LightGray;
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+div {
+/*    border: 1px solid Chocolate;*/
+}
+
 
 .content {
     padding: 0 0.970rem;
     margin: 0 auto;
     min-width: 37.5rem;
+}
+:focus {
+    outline: none;
 }
 
 
@@ -18,10 +31,9 @@ body {
     width: 100%;
     border-bottom: 1px solid #DDD;
     z-index: 9999;
-    box-sizing: border-box;
 }
 .top-navigation > .content {
-    height: 4.375rem;
+    height: 70px;
 }
 .top-navigation .logo {
     height: 4.375rem;
@@ -29,19 +41,20 @@ body {
 .top-navigation .links {
     float: right;
     color: #838994;
-    font-size: 1.04rem;
-    margin-top: 1.7rem;
+    font-size: 16px;
+    margin-top: 25px;
 }
 .top-navigation .links li {
     display: inline-block;
-    margin-left: 1.563rem;
+    margin-left: 25px;
+
 }
 .top-navigation .links li.active {
     color: #4c5058;
     font-weight: 500;
 }
 .top-navigation .links li:hover {
-    cursor: pointe100r;
+    cursor: pointer;
     color: #333333;
 }
 
@@ -148,7 +161,7 @@ button:hover {
     height: 2.5rem;
     display: inline-block;
     margin: 1.25rem 5px;
-    border: 5px solid #eaebec;
+    border: 1px solid #eaebec;
     padding: 0.625rem 0;
     text-align: center;
 }
