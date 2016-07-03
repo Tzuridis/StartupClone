@@ -12,6 +12,7 @@ body {
 }
 div {
 /*    border: 1px solid Chocolate;*/
+    display: block;
 }
 
 
